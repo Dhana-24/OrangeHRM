@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRMAutomation" verbose="2">
+	<parameter name="Browser" value="CHROME"></parameter>
+	<listeners>
+		<listener class-name="orangeHRM.listeners.TestListener"></listener>
+		<listener class-name="orangeHRM.listeners.AnnotationTransformer"></listener>
+	</listeners>
+  <test name="OrangeHRMTestRun">
+	  
+    <classes>
+	  <class name="orangeHRM.test.LoginTest">
+		  <methods>
+			  <include name="Login"></include>
+		  </methods>
+	  </class>
+      <class name="orangeHRM.test.AddEmployeeTest">
+		  <methods>
+			  <include name="AddEmployee"></include>
+		  </methods>
+	  </class>
+      
+    </classes>
+  </test> <!-- OrangeHRMTestRun -->
+</suite> <!-- Suite -->
