@@ -24,7 +24,7 @@ public class AddEmployeePage extends SeleniumBase{
 	@FindBy(xpath="//button[text()=' Add ']")
 	private WebElement addBtn;
 
-	@FindBy(xpath="//input[@placeholder='First name']")
+	@FindBy(xpath="//input[@placeholder='First Name']")
 	private WebElement firstNameField;
 
 	@FindBy(xpath="//input[@placeholder='Last Name']")
